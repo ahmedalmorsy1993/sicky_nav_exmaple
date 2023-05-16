@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        min-height: 100vh;
+      }
+      nav {
+        display: flex;
+        height: 20px;
+        background-color: red;
+      }
+      section {
+        min-height: 200vh;
+      }
+      div {
+        min-height: 100vh;
+      }
+      header {
+        background-color: green;
+        top: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: 100px;
+        position: fixed;
+      }
+      .sticky {
+        position: sticky;
+        top: 100px;
+        left: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>this is header</header>
+      <div></div>
+      <nav>this is nav</nav>
+      <section>this section</section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
