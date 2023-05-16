@@ -17,7 +17,7 @@
       section {
         min-height: 200vh;
       }
-      div {
+      .separtor {
         min-height: 100vh;
       }
       header {
@@ -52,15 +52,38 @@
         bottom: 0;
         transition: all 0.5s linear;
       }
+      .container {
+        background-color: #ccc;
+        max-width: calc(100% - 40px);
+        margin-inline: 20px;
+        margin: 50px auto;
+        min-height: 60vh;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .card {
+        flex-basis: 32%;
+        background-color: red;
+        min-height: 300px;
+        border-radius: 10px;
+      }
     </style>
   </head>
   <body>
     <main>
       <header>this is header</header>
-      <div></div>
+      <div class="separtor"></div>
       <nav>this is nav</nav>
 
       <section>this section</section>
+
+      <div class="container">
+        <!-- <div class="card">ssd</div>
+        <div class="card">ssd</div>
+        <div class="card">ssd</div> -->
+      </div>
       <article class="show-page-count">
         <span class="per_page"></span>
         <span>/</span>
