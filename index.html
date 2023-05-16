@@ -35,6 +35,23 @@
         left: 0;
         right: 0;
       }
+      .scroll-bar {
+        background-color: #ccc;
+        height: 10px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+      }
+      .scroll-bar span {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        background-color: indigo;
+        width: 0;
+        bottom: 0;
+        transition: all 0.5s linear;
+      }
     </style>
   </head>
   <body>
@@ -42,7 +59,17 @@
       <header>this is header</header>
       <div></div>
       <nav>this is nav</nav>
+
       <section>this section</section>
+      <article class="show-page-count">
+        <span class="per_page"></span>
+        <span>/</span>
+        <span class="total"></span>
+      </article>
+      <p class="scroll-bar">
+        <span class="percent-scroll"></span>
+      </p>
+      <button class="load-more">loadMore</button>
     </main>
     <script src="./index.js"></script>
   </body>
